@@ -1,0 +1,86 @@
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  background-color: #e6f2f2; /* soft teal */
+  margin: 0;
+  padding: 0;
+
+  /* Flexbox to center content vertically and horizontally */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* full viewport height */
+}
+
+.container {
+  padding: 40px;
+  text-align: center; /* optional: center heading */
+  width: 90%;
+  max-width: 900px; /* limits table width */
+}
+
+/* Heading */
+h1 {
+  color: #004d4d;
+  margin-bottom: 20px;
+}
+
+/* TABLE STYLING */
+table {
+  width: 100%; /* take container width */
+  border-collapse: collapse;
+  background-color: #ffffff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+th {
+  background: linear-gradient(to right, #008080, #00b3b3);
+  color: #ffffff;
+  cursor: pointer;
+  user-select: none;
+  padding: 14px;
+  text-align: center;
+  border-bottom: 2px solid #006666;
+  font-size: 17px;
+  font-weight: 600;
+  transition: background 0.3s;
+}
+
+th:hover {
+  background: linear-gradient(to right, #006666, #009999);
+}
+
+td {
+  padding: 12px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+  color: #004d4d;
+  font-size: 16px;
+}
+
+tr:nth-child(even) {
+  background-color: #f0fafa;
+}
+
+tr:nth-child(odd) {
+  background-color: #ffffff;
+}
+
+tr:hover {
+  background-color: #d9f2f2;
+  color: #007777;
+  font-weight: 500;
+}
+
+/* RESPONSIVE */
+@media screen and (max-width: 768px) {
+  table {
+    width: 100%;
+  }
+
+  th, td {
+    padding: 10px;
+    font-size: 14px;
+  }
+}
